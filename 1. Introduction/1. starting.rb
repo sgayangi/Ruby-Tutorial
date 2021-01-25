@@ -24,11 +24,31 @@ puts "Monkey, " + name;
 name = "potato";
 
 # the parantheses for calling this function are apparently optional but just type them anyway
-puts phrase.upcase();
-puts phrase.downcase();
+puts name.upcase();
+puts name.downcase();
 
 # others are .strip(), .length()
 
-phrase = "Testing testing testing still testing";
+phrase1 = "Testing testing testing still testing";
 
-puts (phrase.include?"testing")
+puts phrase1.include?"testing"
+
+# replaces all occurences of first parameter with second parameter
+puts phrase1.gsub!("test","potato");
+
+number = 103;
+s_num = "1023";
+# converts to string
+puts number.to_s();
+puts s_num.to_i();
+
+number = -20;
+puts number.abs();
+
+number = 40.487;
+
+puts number.round();
+puts number.floor();
+puts number.ceil();
+
+# you have the Math library for fun functions
