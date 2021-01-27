@@ -28,3 +28,16 @@ class Book
 end
 
 book1 = Book.new("Harry Potter", "JK Rowling", 400)
+
+# referring to the attributes within that object (basically this.attribute_name) is used with @ in ruby
+# so this.attribute_name is the same thing as @attribute_name
+
+# INHERITANCE
+
+class FictionNovel < Book
+
+end
+
+fictionNovel = FictionNovel.new("Harry Potter", "JK Rowling", 400);
+puts fictionNovel.title
+# to override methods just define the method the same way you would for any normal method

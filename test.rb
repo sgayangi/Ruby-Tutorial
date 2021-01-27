@@ -1,14 +1,6 @@
-class Book
-    attr_accessor :title, :author, :pageCount
+require_relative 'tools'
 
-    def initialize(title, author, pageCount)
-        @title = title
-        @author = author
-        @pageCount = pageCount
-    end
+include Tools
 
-end
 
-book1 = Book.new("Harry Potter", "JK Rowling", 400)
-
-puts book1.title
+Tools.sayBye("Kevin")
